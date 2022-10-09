@@ -18,7 +18,7 @@ public class PatrolBehaviour : MonoBehaviour
     [SerializeField] private float _waitingTimer;
     private int _count = 1;
     
-    void Update()
+    private void Update()
     {
           _currentTime += Time.deltaTime;
           var distance = Vector3.Distance(_start.position, _end.position);
